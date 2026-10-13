@@ -2,7 +2,7 @@
 
 Dashboard interactivo de Análisis Exploratorio de Datos sobre bienestar laboral: agotamiento, liderazgo comprometido y señales organizacionales. Construido con **Streamlit** y **Plotly**.
 
-🔗 **Demo en vivo:** *(pendiente de deploy en Streamlit Cloud)*
+🔗 **Demo en vivo:** *bienestar-laboral-ytucnmq8btmevkgytrxnit.streamlit.app*
 
 ---
 
@@ -102,10 +102,10 @@ La app abre en `http://localhost:8501`.
 
 ## Stack
 
-- [Streamlit](https://streamlit.io) — interfaz interactiva
-- [Plotly](https://plotly.com/python/) — visualizaciones
-- [pandas](https://pandas.pydata.org) + [NumPy](https://numpy.org) — manipulación de datos
-- [SciPy](https://scipy.org) — correlaciones Spearman y pruebas estadísticas
+- [Streamlit](https://streamlit.io) - interfaz interactiva
+- [Plotly](https://plotly.com/python/) - visualizaciones
+- [pandas](https://pandas.pydata.org) + [NumPy](https://numpy.org) - manipulación de datos
+- [SciPy](https://scipy.org) - correlaciones Spearman y pruebas estadísticas
 
 ---
 
