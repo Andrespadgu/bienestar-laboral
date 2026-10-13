@@ -17,6 +17,20 @@ header[data-testid="stHeader"] { background: transparent !important; box-shadow:
 [data-testid="stVerticalBlock"] { gap: 0 !important; }
 [data-testid="stVerticalBlockBorderWrapper"] { border: none !important; padding: 0 !important; }
 
+/* ── SIDEBAR COLLAPSE TOGGLE — siempre visible ── */
+[data-testid="collapsedControl"] {
+    display: flex !important;
+    visibility: visible !important;
+    z-index: 999999 !important;
+    pointer-events: all !important;
+}
+[data-testid="collapsedControl"] button {
+    background: #0D1E2E !important;
+    color: rgba(255,255,255,0.7) !important;
+    border-radius: 0 4px 4px 0 !important;
+    border: 1px solid rgba(255,255,255,0.1) !important;
+}
+
 /* ── SIDEBAR ── */
 [data-testid="stSidebar"] {
     background: #0D1E2E !important;
