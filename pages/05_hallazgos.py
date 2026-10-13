@@ -69,7 +69,6 @@ md(f"""
 <div style="background:#0D1E2E;padding:2px 64px 64px;">
   <div class="reco-grid-2">
 
-    <!-- 01 Liderazgo -->
     <div class="rc">
       <div class="rc-ev">
         <span class="rc-num" style="color:#7A9BB8">{diff:.0f}%</span>
@@ -86,7 +85,6 @@ md(f"""
       </div>
     </div>
 
-    <!-- 02 Presión del tiempo -->
     <div class="rc">
       <div class="rc-ev">
         <span class="rc-num" style="color:#C75B3C">ρ = {rho_pt_bu:+.3f}</span>
@@ -103,7 +101,6 @@ md(f"""
       </div>
     </div>
 
-    <!-- 03 Salud mental org. -->
     <div class="rc">
       <div class="rc-ev">
         <span class="rc-num" style="color:#5E8B7E">IRE {sm_ire:.1f}</span>
@@ -119,7 +116,6 @@ md(f"""
       </div>
     </div>
 
-    <!-- 04 Directivos -->
     <div class="rc">
       <div class="rc-ev">
         <span class="rc-num" style="color:#C4820A">{dir_pct:.1f}%</span>

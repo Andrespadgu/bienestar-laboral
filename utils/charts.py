@@ -14,11 +14,13 @@ _BG   = "rgba(0,0,0,0)"
 
 
 def _base(h=340, **kw):
-    return dict(
+    base = dict(
         paper_bgcolor=_BG, plot_bgcolor=_BG,
         font=_FONT, margin=dict(l=0, r=16, t=12, b=0),
-        showlegend=False, height=h, **kw,
+        showlegend=False, height=h,
     )
+    base.update(kw)
+    return base
 
 
 # ── IRE HORIZONTAL BARS ──────────────────────────────────────────────────────
@@ -393,8 +395,7 @@ def chart_sex(df) -> go.Figure:
             hovertemplate=f"{name} · %{{x}}: %{{y:.2f}}<extra></extra>",
         ))
     fig.update_layout(
-        **_base(h=300),
-        showlegend=True,
+        **_base(h=300, showlegend=True),
         legend=dict(orientation="h", x=0, y=1.1,
                     font=dict(size=9, color=COLORS["text_soft"]),
                     bgcolor=_BG, borderwidth=0),
