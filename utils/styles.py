@@ -229,6 +229,7 @@ header[data-testid="stHeader"] { background: transparent !important; box-shadow:
     letter-spacing: -0.05em;
     line-height: 1;
     margin-bottom: 8px;
+    color: #1C2B3A;
 }
 .stat-lbl {
     font-size: 0.7rem;
@@ -237,17 +238,17 @@ header[data-testid="stHeader"] { background: transparent !important; box-shadow:
     letter-spacing: 0.01em;
 }
 
-/* ── STAT STRIP (dark) ── */
+/* ── STAT STRIP (dark-bordered, sobre fondo claro) ── */
 .stat-strip-d {
     display: flex;
     gap: 0;
-    border-top: 1px solid rgba(255,255,255,0.06);
-    border-bottom: 1px solid rgba(255,255,255,0.06);
+    border-top: 1px solid rgba(0,0,0,0.06);
+    border-bottom: 1px solid rgba(0,0,0,0.06);
 }
 .stat-cell-d {
     flex: 1;
     padding: 28px 32px 36px;
-    border-right: 1px solid rgba(255,255,255,0.06);
+    border-right: 1px solid rgba(0,0,0,0.06);
 }
 .stat-cell-d:last-child { border-right: none; }
 

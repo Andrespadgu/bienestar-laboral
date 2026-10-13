@@ -41,19 +41,19 @@ md(f"""
 <div class="stat-strip-d">
   <div class="stat-cell-d">
     <div class="stat-n" style="color:#5E8B7E">{cl_h_bu:.2f}</div>
-    <div class="stat-lbl" style="color:rgba(255,255,255,0.4);">BU medio · CL &gt; 3.5 (n={n_cl_h})</div>
+    <div class="stat-lbl">BU medio · CL &gt; 3.5 (n={n_cl_h})</div>
   </div>
   <div class="stat-cell-d">
     <div class="stat-n" style="color:#C75B3C">{cl_l_bu:.2f}</div>
-    <div class="stat-lbl" style="color:rgba(255,255,255,0.4);">BU medio · CL ≤ 3.5 (n={n_cl_l})</div>
+    <div class="stat-lbl">BU medio · CL ≤ 3.5 (n={n_cl_l})</div>
   </div>
   <div class="stat-cell-d">
-    <div class="stat-n" style="color:rgba(255,255,255,0.9)">{rho_cl_bu:+.3f}</div>
-    <div class="stat-lbl" style="color:rgba(255,255,255,0.4);">ρ Spearman CL ↔ BU ({pval_label(pval_cl_bu)})</div>
+    <div class="stat-n">{rho_cl_bu:+.3f}</div>
+    <div class="stat-lbl">ρ Spearman CL ↔ BU ({pval_label(pval_cl_bu)})</div>
   </div>
   <div class="stat-cell-d">
     <div class="stat-n" style="color:#5E8B7E">{rho_cl_sat:+.3f}</div>
-    <div class="stat-lbl" style="color:rgba(255,255,255,0.4);">ρ CL ↔ SAT ({pval_label(pval_cl_sat)})</div>
+    <div class="stat-lbl">ρ CL ↔ SAT ({pval_label(pval_cl_sat)})</div>
   </div>
 </div>
 """)

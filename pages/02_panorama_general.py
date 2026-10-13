@@ -33,19 +33,19 @@ md(f"""
 <div class="stat-strip-d">
   <div class="stat-cell-d">
     <div class="stat-n" style="color:#C75B3C">{kpi['pct_bu']:.1f}%</div>
-    <div class="stat-lbl" style="color:rgba(255,255,255,0.4);">Burnout moderado–alto (BU &gt; 3)</div>
+    <div class="stat-lbl">Burnout moderado–alto (BU &gt; 3)</div>
   </div>
   <div class="stat-cell-d">
     <div class="stat-n" style="color:#C75B3C">{kpi['pct_som']:.1f}%</div>
-    <div class="stat-lbl" style="color:rgba(255,255,255,0.4);">Somatización alta (SOM &gt; 4)</div>
+    <div class="stat-lbl">Somatización alta (SOM &gt; 4)</div>
   </div>
   <div class="stat-cell-d">
-    <div class="stat-n" style="color:rgba(255,255,255,0.9)">{kpi['mean_bu']:.2f}</div>
-    <div class="stat-lbl" style="color:rgba(255,255,255,0.4);">Media burnout (escala 1–5)</div>
+    <div class="stat-n">{kpi['mean_bu']:.2f}</div>
+    <div class="stat-lbl">Media burnout (escala 1–5)</div>
   </div>
   <div class="stat-cell-d">
     <div class="stat-n" style="color:#5E8B7E">{kpi['mean_sat']:.2f}</div>
-    <div class="stat-lbl" style="color:rgba(255,255,255,0.4);">Media satisfacción (escala 1–7)</div>
+    <div class="stat-lbl">Media satisfacción (escala 1–7)</div>
   </div>
 </div>
 """)
