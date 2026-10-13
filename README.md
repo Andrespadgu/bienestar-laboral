@@ -1,4 +1,4 @@
-# Bienestar Laboral — Dashboard EDA
+# Bienestar Laboral - Dashboard EDA
 
 Dashboard interactivo de Análisis Exploratorio de Datos sobre bienestar laboral: agotamiento, liderazgo comprometido y señales organizacionales. Construido con **Streamlit** y **Plotly**.
 
@@ -12,7 +12,7 @@ Los hallazgos se calculan en tiempo real desde los datos; los números a continu
 
 | # | Hallazgo | Número clave |
 |---|---|---|
-| 1 | **El burnout no es el mayor problema** — Salud Mental organizacional (SM) encabeza el riesgo en el índice IRE | IRE 51.5 · puesto 1 de 16 |
+| 1 | **El burnout no es el mayor problema**  Salud Mental organizacional (SM) encabeza el riesgo en el índice IRE | IRE 51.5 · puesto 1 de 16 |
 | 2 | **1 de cada 4 trabajadores** supera el umbral de burnout moderado–alto | 24.5 % con BU > 3 |
 | 3 | **Paradoja del directivo**: los jefes están más agotados que los operativos | 37.1 % vs 18.8 % con burnout moderado |
 | 4 | **El liderazgo es el mayor escudo**: con liderazgo comprometido el burnout cae ~47 % | BU = 1.85 (CL alto) vs 2.72 (CL bajo) |
