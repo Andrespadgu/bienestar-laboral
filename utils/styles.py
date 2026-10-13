@@ -1,3 +1,4 @@
+import textwrap
 import streamlit as st
 
 _CSS = """
@@ -43,11 +44,10 @@ header[data-testid="stHeader"] { background: transparent !important; box-shadow:
 /* ── COVER ── */
 .cover-wrap {
     background: #0D1E2E;
-    min-height: 100vh;
-    padding: 72px 64px 56px;
+    padding: 72px 64px 64px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 56px;
     box-sizing: border-box;
 }
 .cover-eyebrow {
@@ -211,7 +211,7 @@ header[data-testid="stHeader"] { background: transparent !important; box-shadow:
 }
 .stat-cell {
     flex: 1;
-    padding: 28px 32px;
+    padding: 28px 32px 36px;
     border-right: 1px solid rgba(0,0,0,0.06);
 }
 .stat-cell:last-child { border-right: none; }
@@ -220,7 +220,7 @@ header[data-testid="stHeader"] { background: transparent !important; box-shadow:
     font-weight: 900;
     letter-spacing: -0.05em;
     line-height: 1;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
 }
 .stat-lbl {
     font-size: 0.7rem;
@@ -238,7 +238,7 @@ header[data-testid="stHeader"] { background: transparent !important; box-shadow:
 }
 .stat-cell-d {
     flex: 1;
-    padding: 28px 32px;
+    padding: 28px 32px 36px;
     border-right: 1px solid rgba(255,255,255,0.06);
 }
 .stat-cell-d:last-child { border-right: none; }
@@ -359,6 +359,52 @@ header[data-testid="stHeader"] { background: transparent !important; box-shadow:
 /* ── PLOTLY OVERRIDES ── */
 .stPlotlyChart { background: transparent !important; }
 .js-plotly-plot .plotly { background: transparent !important; }
+
+/* ── RESPONSIVE / MOBILE ── */
+@media (max-width: 640px) {
+  .cover-wrap  { padding: 40px 24px !important; gap: 32px; }
+  .hero-d, .hero-l { padding: 40px 24px 32px !important; }
+  .pad-l, .pad-d, .pad-alt { padding: 28px 24px !important; }
+  .reco-wrap  { padding: 36px 24px 48px !important; }
+  .closing    { padding: 48px 24px !important; }
+
+  .cover-title  { font-size: clamp(2.8rem,12vw,4rem) !important; }
+  .hero-num-d, .hero-num-l { font-size: clamp(3.2rem,14vw,5.5rem) !important; }
+  .stat-n       { font-size: 2rem !important; }
+  .cover-stat-n { font-size: 1.8rem !important; }
+
+  /* Cover stats: 2 columns on mobile */
+  .cover-stats { flex-wrap: wrap !important; padding-top: 16px; }
+  .cover-stat  {
+    flex: 0 0 50% !important;
+    padding: 12px 0 !important;
+    border-right: none !important;
+    margin-right: 0 !important;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+
+  /* KPI strips: wrap to 2 columns */
+  .stat-strip, .stat-strip-d { flex-wrap: wrap !important; }
+  .stat-cell, .stat-cell-d {
+    flex: 0 0 50% !important;
+    border-right: none !important;
+    padding: 18px 16px 24px !important;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+  }
+  .stat-cell-d { border-bottom-color: rgba(255,255,255,0.06) !important; }
+
+  /* Reco grid: single column */
+  .reco-grid-2 { grid-template-columns: 1fr !important; }
+
+  /* Streamlit columns → stack vertically */
+  [data-testid="stHorizontalBlock"] { flex-direction: column !important; }
+  [data-testid="stColumn"] {
+    width: 100% !important;
+    flex: none !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+  }
+}
 """
 
 
@@ -367,4 +413,4 @@ def inject_css():
 
 
 def md(html: str):
-    st.markdown(html, unsafe_allow_html=True)
+    st.markdown(textwrap.dedent(html), unsafe_allow_html=True)

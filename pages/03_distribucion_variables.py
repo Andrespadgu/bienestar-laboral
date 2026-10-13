@@ -1,11 +1,9 @@
 import streamlit as st
-from utils.styles import inject_css, md
+from utils.styles import md
 from utils.data_loader import load_data
 from utils.stats import compute_kpis, compare_groups
 from utils.charts import chart_cargo, chart_modal, chart_sex, chart_horas
 
-st.set_page_config(page_title="03 · La Paradoja del Cargo", layout="wide", page_icon="◼")
-inject_css()
 df  = load_data()
 kpi = compute_kpis(df)
 

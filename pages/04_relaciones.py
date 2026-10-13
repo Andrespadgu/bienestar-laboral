@@ -1,11 +1,9 @@
 import streamlit as st
-from utils.styles import inject_css, md
+from utils.styles import md
 from utils.data_loader import load_data
 from utils.stats import compute_kpis, compute_correlations, spearman, pval_label
 from utils.charts import chart_cl, chart_corr
 
-st.set_page_config(page_title="04 · Una Variable Lo Cambia Todo", layout="wide", page_icon="◼")
-inject_css()
 df   = load_data()
 kpi  = compute_kpis(df)
 corrs = compute_correlations(df)

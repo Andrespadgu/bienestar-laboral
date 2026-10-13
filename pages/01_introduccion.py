@@ -1,11 +1,9 @@
 import streamlit as st
-from utils.styles import inject_css, md
+from utils.styles import md
 from utils.data_loader import load_data
 from utils.stats import compute_kpis
 from utils.charts import chart_ire, chart_jdr
 
-st.set_page_config(page_title="01 · El Mapa del Riesgo", layout="wide", page_icon="◼")
-inject_css()
 df  = load_data()
 kpi = compute_kpis(df)
 
