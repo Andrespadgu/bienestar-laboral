@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Entornos virtuales
+.env
+.venv/
+venv/
+env/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Datos procesados / temporales
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+data/_embed*.txt
+# Archivo original con espacios (reemplazado por bienestar_laboral.csv en UTF-8)
+data/bienestar_laboral_EDA*
+
+# Archivos de desarrollo y contexto de sesión
+CLAUDE.md
+CLAUDE2.md
+.claude/
+_embed*.txt
+chart.min.js
+
+# Carpeta context/ (archivos originales renombrados a ubicaciones limpias)
+context/
+
+# Documentos de consigna (no necesarios para el deploy)
+docs/
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo

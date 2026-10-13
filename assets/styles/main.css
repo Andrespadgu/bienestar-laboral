@@ -1,0 +1,17 @@
+/* Estilos globales para la historieta de dashboards */
+
+[data-testid="stSidebar"] {
+    background-color: #1e1e2e;
+}
+
+[data-testid="stSidebar"] * {
+    color: #cdd6f4;
+}
+
+h1 {
+    color: #cba6f7;
+}
+
+h2, h3 {
+    color: #89b4fa;
+}
